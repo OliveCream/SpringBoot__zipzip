@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/* 검색창 */
+input[type="text"] {
+    border: 1px solid #d698b1; /* 테두리 색상 */
+    border-radius: 4px; /* 모서리 둥근 처리 */
+    width: calc(100% - 60%); /* 버튼 너비 조정 */
+    padding: 10px; /* 내부 여백 */
+    margin-bottom: 10px; /* 아래쪽 여백 */
+    color: #000; /* 텍스트 색상 - 검정색으로 변경 */
+}
+
+/* 검색창에 포커스가 되었을 때의 스타일 */
+.search-bar_input:focus {
+    border-color: #d698b1; /* 포커스가 되었을 때의 테두리 색상 */
+    outline: none; /* 기본 포커스 효과 제거 */
+}
+
+/* 버튼 스타일 수정 */
+button[type="button"] {
+    background-color: #d698b1; /* 배경색 */
+    border: 1px solid #d698b1; /* 테두리 색상 일치 */
+    border-left: none; /* 왼쪽 테두리 제거 */
+    border-radius: 0 6px 6px 0; /* 왼쪽 모서리 둥근 처리 제거 */
+    padding: 10px; /* 내부 여백 */
+    width: 45px; /* 버튼 너비 조정 */
+    height: 45px; /* 버튼 높이 조정 */
+    cursor: pointer; /* 커서 모양 변경 */
+    margin-left: -2%;
+    margin-top: 5px;
+    align-items: center; /* 중앙 정렬 */
+    justify-content: center; /* 중앙 정렬 */
+}
+
+/* 버튼 안 검색 아이콘 위치 설정 */
+img[src="/resources/images/search_icon.png"] {
+    width: 90%; 
+    height: auto; 
+}
+
+/* 각 리뷰 박스 */
+.box-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 내용을 위아래로 균등 분배 */
+    height: 300px; /* 최소 높이 설정 */
+    border: 1px solid #dbd9db;
+    margin-bottom: 20px; /* 하단 여백 */
+    padding: 20px; /* 패딩 */
+    border-radius: 8px; /* 모서리 둥근 처리 */  
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}	
+
+/* 리뷰 박스에 마우스 갖다댔을 때 */
+.box-feature {
+  transition: transform 0.3s ease;
+}
+
+.box-feature:hover {
+  background-color: #fcfcfc;
+  transform: translateY(-35px);  /* 리뷰 박스가 위로 올라가는 효과 */
+}
+
+/* 중개사 정보 */
+.agent-info {
+	cursor: pointer;
+}
+
+/* 중개사 이미지 프로필과 중개사 정보 */
+.profile-icon, .agent-info {
+    display: inline-block; /* 이미지와 span을 한 줄에 나타내기 위해 */
+    vertical-align: middle; /* 이미지와 텍스트를 수직 정렬하기 위해 */
+}
+
+/* 작성자 아이디랑 등록일 */
+.s_info {
+    font-size: 0.9em; /* 원하는 폰트 크기 조절 */
+}
+
+/* 페이징 스타일 */
+.pagination {
+    text-align: center; 
+    height: 37px; 
+    line-height: 37px;
+    position: relative; 
+    left: 50%; /* 왼쪽 여백을 50%로 설정합니다. */
+    transform: translateX(-50%); /* 가운데 정렬을 위해 x축으로 -50%만큼 이동합니다. */
+    width: auto; /* 필요한 만큼의 너비를 가지도록 설정합니다. */
+    bottom: -5%;
+    justify-content: center;
+}
+
+.pagination p {
+	display:inline-block; 
+	border:1px solid #d6d6d6; 
+	height:35px; width:35px;  
+	vertical-align:middle; 
+	text-align:center; 
+	text-decoration:none; 
+	font-size:15px; 
+	color:white;
+	background:#d6d6d6;
+	border-radius: 20px;
+	margin-left: 4px;
+	cursor: pointer;
+}
+
+.pagination .on {
+	color:#fff; 
+	font-weight:bold; 
+	background:#d698b1;
+	cursor: pointer;
+}
+
+.pagination .next{
+	height:35px; 
+	width:35px; 
+	border:1px solid #d4d4d4;
+	overflow:hidden;
+	position:relative; 
+	font-size:0;
+}
+
+.pagination .next{
+	background:#ebebeb url("") no-repeat center center; 
+	margin-left:4px; 
+	border-left:0;
+}
+
+.agent-sub {
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+/* 별점 스타일 */
+#star {
+    border-width: 2px; /* 테두리 두께 조절 */
+  	font-size: 1.5rem;
+  	margin-top: 2%;
+  	margin: 10px 0;
+  	display: flex;
+}
+
+#star:not(.on) {
+  color: #ffee00;
+}
+
+/* 사용자 정보 */
+.user_info {
+	display: flex;
+    align-items: center; /* 아이템을 수직 가운데 정렬 */
+}
+
+/* 별점과 삭제 버튼 스타일 */
+.rating-and-button {
+    display: flex; /* 요소들을 가로로 나란히 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    padding: 4px 0; /* 위아래 여백을 줄이기 */
+      	margin: 0; /* 추가적인 외부 여백 제거 */
+      	width: 90%;
+      	height: 20%;
+}
+
+/* 별점 (숫자) */
+.score {
+	font-weight: bold;
+}
+/* 총 평점 */
+.totalScore {
+	color: gray;
+}
+
+.score,
+.totalScore {
+    display: inline-block;
+}
