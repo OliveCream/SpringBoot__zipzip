@@ -1,11 +1,10 @@
 # Spring mini project - sistagram
-> sistagram - 인스타그램 클론 코딩
+> zipzip - 부동산중개 웹 서비스
 
 <br/>
 
 ## 🖥️ 프로젝트 소개
-> clone coding of instagram website 
-
+> 부동산 중개 웹 서비스
 <br>
 
 ## 🕰️ 개발 기간
