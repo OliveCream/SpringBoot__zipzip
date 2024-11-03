@@ -37,6 +37,6 @@
 
 ## 웹 이미지
 <p align="center">
- <img src="https://github.com/user-attachments/assets/fbb9e90e-91e2-4acb-ab44-502ad75c2444" align="center" width="90%" >
+ <img src="https://github.com/user-attachments/assets/fbb9e90e-91e2-4acb-ab44-502ad75c2444" align="center" width="90% box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);" >
  <img src="https://github.com/user-attachments/assets/4424ab01-829b-40bd-b156-b9a6969e36a8" align="center" width="90%">
 </p>
