@@ -37,7 +37,7 @@
 
 ## 웹 이미지
 <p align="center">
- <img src="https://github.com/user-attachments/assets/865834e6-bca2-422b-9e7a-2b9f98b1fe8d" align="center" width="80%" >
+ <img src="https://github.com/user-attachments/assets/ae6be0be-ff95-420e-b9d4-6fafd841f0ad" align="center" width="80%" >
  <img src="https://github.com/user-attachments/assets/8fef8c6e-8c9a-4dc5-94ae-e8d7b5010544" align="center" width="45%" height="300px">
 </p>
 <p align="center">
